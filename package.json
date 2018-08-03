@@ -1,0 +1,20 @@
+{
+  "name": "servicedesk",
+  "version": "1.0.0",
+  "description": "servicedesk in Node.js on Docker",
+  "author": "Leon Ramftler leon@ramftler.de",
+  "main": "server.js",
+  "scripts": {
+    "client": "cd src/client && yarn start",
+    "server": "nodemon src/server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.1",
+    "mongodb": "^3.0.8",
+    "mongoose": "^5.0.18",
+    "mustache": "^2.3.0"
+  }
+}

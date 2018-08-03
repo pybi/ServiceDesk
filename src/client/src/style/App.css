@@ -1,0 +1,94 @@
+
+.serviceTile {
+    border-radius: 5px;
+    border: 2px solid #bbb;
+    width: 50%;
+    margin: 5px auto;
+    padding: 5px;
+    display: flex;
+}
+
+.serviceIcon {
+    width: 50px;
+    padding: 5px;
+}
+.serviceActions {
+    width: 50px;
+}
+
+.serviceTile h4 {
+    margin: 0;
+}
+
+.serviceInfos {
+    width: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.navigationBorder{
+  border-bottom: 1px solid #ccc;
+}
+
+.ServiceDeskHeaderImg {
+	background: url("../images/ServiceDeskBackground.jpg");
+	background-position: 50% 55%;
+	background-size: 100% auto !important;
+}
+.small-width{
+  width: 60%;
+}
+
+.headList {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.searchResults {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 10px;
+}
+
+.margin10-topbottom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.headerContent {
+  display: flex;
+}
+
+.serviceTags {
+  margin-left: 20px;
+}
+
+.white {
+  color: #fff;
+}
+.gray {
+  color: #7f8c8d;
+}
+.light-gray-background {
+  background-color: #ecf0f1;
+}
+.green{
+  color: #27ae60;
+}
+.orange{
+  color: #f39c12;
+}
+.yellow{
+  color: #f1c40f;
+}
+.blue {
+  color: #2980b9;
+}
+.red{
+  color: #c0392b;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,21 @@
+.pickerColor{
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.colorPickerBox {
+  width: 200px;
+}
+.sdReactNotification {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.modal-card {
+  overflow: visible !important;
+}
+.modal-card-body {
+  overflow: visible !important;
+}

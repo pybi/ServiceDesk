@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import ListServices from './ListServices';
 
 class NewService extends React.Component{
   constructor(props){
@@ -58,7 +59,7 @@ class NewService extends React.Component{
     console.log(this.selectedCheckboxes);
     console.log(JSON.stringify(Array.from(this.selectedCheckboxes)));
     console.log("AAAAAAA");
-    axios.post('api/services/add', {
+    axios.post('/api/services/add', {
       title: this.state.title,
       description: this.state.description,
       sections: Array.from(this.selectedCheckboxes),
@@ -75,7 +76,13 @@ class NewService extends React.Component{
   render(){
     return(
       <div>
-        <a className="button" onClick={this.toggleModal}>Create Service</a>
+        <a className="button" onClick={this.toggleModal}>
+          <span className="icon is-small">
+            <i className="fa fa-plus"></i>
+          </span>
+          <span>Add Service</span>
+        </a>
+        <ListServices />
           <div className={"modal "+ this.state.isActive}>
             <div className="modal-background" onClick={this.toggleModal}></div>
             <div className="modal-card">

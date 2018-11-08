@@ -32,6 +32,7 @@ class NewCategory extends React.Component{
   }
 
   create(event){
+    event.preventDefault();
     axios.post('/api/category/add', {
       title: this.state.title,
       image: this.state.image,
@@ -47,13 +48,17 @@ class NewCategory extends React.Component{
       console.log("Error - "+error);
     });
     this.toggleModal();
-    event.preventDefault();
   }
 
   render(){
     return(
       <div>
-        <a className="button" onClick={this.toggleModal}>Create Category</a>
+        <a className="button is-outlined" onClick={this.toggleModal}>
+          <span className="icon is-small">
+            <i className="fa fa-plus"></i>
+          </span>
+          <span>Add Category</span>
+        </a>
           <div className={"modal "+ this.state.isActive}>
             <div className="modal-background" onClick={this.toggleModal}></div>
             <div className="modal-card">

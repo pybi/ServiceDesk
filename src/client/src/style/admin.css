@@ -1,7 +1,6 @@
 .pickerColor{
   width: 25px;
   height: 25px;
-  margin: 5px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -18,4 +17,10 @@
 }
 .modal-card-body {
   overflow: visible !important;
+}
+.pickerColor {
+  padding: 5px !important;
+}
+.dropdown-menu {
+  min-width: 15rem !important;
 }

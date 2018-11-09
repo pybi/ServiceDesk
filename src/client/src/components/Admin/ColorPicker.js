@@ -23,7 +23,7 @@ class ColorPicker extends React.Component{
       <div>
         <div className="dropdown is-hoverable">
           <div className="dropdown-trigger">
-            <button className="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+            <button className="button" aria-haspopup="true" aria-controls="dropdown-menu4" onClick={e => e.preventDefault()}>
               <span className="icon is-medium" style={{color: this.state.selectedColor}}>
                 <i className="fa fa-circle"></i>
               </span>
@@ -36,7 +36,7 @@ class ColorPicker extends React.Component{
           <div className="dropdown-menu" id="dropdown-menu4" role="menu">
             <div className="dropdown-content">
               <div className="dropdown-item">
-                <div className="columns">
+                <div className="columns is-mobile is-multiline">
                   {this.state.allColors.map(color => (
                     <ListColors key={color} color={color} headerClickHandler={this.colorChanger} />
                   ))}
@@ -60,7 +60,7 @@ class ListColors extends React.Component{
   }
   render(){
     return(
-      <div className="column">
+      <div className="column is-one-fifth">
         <div className="pickerColor" onClick={this.clickHandler} value={this.props.color} style={{background: this.props.color}}></div>
       </div>
     );

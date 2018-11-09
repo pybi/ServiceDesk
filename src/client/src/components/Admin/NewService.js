@@ -58,7 +58,7 @@ class NewService extends React.Component{
     console.log(this.selectedCheckboxes);
     console.log(JSON.stringify(Array.from(this.selectedCheckboxes)));
     console.log("AAAAAAA");
-    axios.post('api/services/add', {
+    axios.post('/api/services/add', {
       title: this.state.title,
       description: this.state.description,
       sections: Array.from(this.selectedCheckboxes),

@@ -32,6 +32,8 @@ class NewCategory extends React.Component{
   }
 
   create(event){
+    this.toggleModal();
+    event.preventDefault();
     axios.post('/api/category/add', {
       title: this.state.title,
       image: this.state.image,
@@ -46,8 +48,6 @@ class NewCategory extends React.Component{
     .catch(function (error) {
       console.log("Error - "+error);
     });
-    this.toggleModal();
-    event.preventDefault();
   }
 
   render(){

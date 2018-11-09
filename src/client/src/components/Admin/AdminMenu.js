@@ -19,14 +19,6 @@ class AdminMenu extends React.Component{
               </Link>
             </li>
             <li>
-              <Link to="/admin/general">
-                <span className="icon is-medium">
-                  <i className="fa fa-cog"></i>
-                </span>
-                General Configuration
-              </Link>
-            </li>
-            <li>
               <Link to="/admin/category">
                 <span className="icon is-medium">
                   <i className="fa fa-folder"></i>

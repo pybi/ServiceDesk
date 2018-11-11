@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import NewCategory from './NewCategory.js';
-import Notifications from './Notifications.js';
+import Notifications from '../Notifications.js';
 
 
 class Categories extends React.Component {
@@ -79,6 +79,14 @@ class ListCategoriesToEdit extends React.Component{
         </table>
         <Notifications message={this.state.notifyMessage} />
       </div>
+    );
+  }
+}
+
+class AddElementToList extends React.Component {
+  render(){
+    return(
+
     );
   }
 }

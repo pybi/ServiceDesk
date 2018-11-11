@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import AdminMenu from './AdminMenu.js';
 import NewService from './NewService.js';
-import Category from './Category.js';
+import Category from './Category/CategoryList.js';
 import Sections from './Sections.js';
 import Dashboard from './Dashboard.js';
 import '../../style/admin.css';
@@ -20,7 +20,6 @@ class Admin extends React.Component {
             <div className="column">
               <Switch>
                 <Route exact path='/admin/dashboard' component={Dashboard}/>
-                <Route path='/admin/general' component={GeneralConfig}/>
                 <Route path='/admin/category' component={Category}/>
                 <Route path='/admin/sections' component={Sections}/>
                 <Route path='/admin/service' component={NewService}/>
@@ -29,29 +28,6 @@ class Admin extends React.Component {
           </div>
         </div>
       </section>
-    );
-  }
-}
-
-class GeneralConfig extends React.Component{
-  render(){
-    return(
-      <div>
-        <div>General Configuration</div>
-        <form>
-          <div className="field">
-            <label className="label">Title</label>
-            <div className="control">
-              <input className="input" type="text" placeholder="Text input" />
-            </div>
-          </div>
-          <div className="field is-grouped">
-            <div className="control">
-              <a className="button is-link">Submit</a>
-            </div>
-          </div>
-        </form>
-      </div>
     );
   }
 }

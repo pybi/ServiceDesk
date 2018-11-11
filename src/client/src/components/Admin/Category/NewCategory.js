@@ -32,6 +32,10 @@ class NewCategory extends React.Component{
   }
 
   create(event){
+<<<<<<< HEAD:src/client/src/components/Admin/Category/NewCategory.js
+    this.toggleModal();
+=======
+>>>>>>> d8eb2e05e7fe7d8028e8a61362b5de0f4af44ef9:src/client/src/components/Admin/NewCategory.js
     event.preventDefault();
     axios.post('/api/category/add', {
       title: this.state.title,
@@ -47,7 +51,10 @@ class NewCategory extends React.Component{
     .catch(function (error) {
       console.log("Error - "+error);
     });
+<<<<<<< HEAD:src/client/src/components/Admin/Category/NewCategory.js
+=======
     this.toggleModal();
+>>>>>>> d8eb2e05e7fe7d8028e8a61362b5de0f4af44ef9:src/client/src/components/Admin/NewCategory.js
   }
 
   render(){
